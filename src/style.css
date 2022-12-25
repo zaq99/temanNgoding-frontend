@@ -3,4 +3,17 @@
 body {
     font-family: "Poppins", sans-serif;
     background: #542e71;
+    color: #232323;
+}
+
+.rounded-up {
+    border-radius: 40px 40px 0 0;
+}
+
+.rounded-left {
+    border-radius: 10px 0 0 10px;
+}
+
+.rounded-right {
+    border-radius: 0 10px 10px 0;
 }
