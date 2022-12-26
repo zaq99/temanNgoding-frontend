@@ -1,6 +1,7 @@
 import Card from "../components/Card";
 import { AboutPeople, Roket, Playing, Laptop } from "../assets";
 import AboutCard from "../components/AboutCard";
+import Owner from "../components/Owner";
 
 const AboutPage = () => {
     // const cardValue = [
@@ -14,7 +15,7 @@ const AboutPage = () => {
             <div className="w-4/5 mx-auto flex justify-center">
                 <img src={AboutPeople} alt="" />
             </div>
-            <div className="rounded-up bg-warna-utama-400 pt-6 text-white">
+            <div className="rounded-up bg-warna-utama-400 pt-6 text-white pb-48">
                 <div className="w-4/5 mx-auto">
                     <h1 className="text-center font-semibold text-4xl p-3">
                         Hallo, Aku adalah Teman Ngoding.
@@ -45,11 +46,13 @@ const AboutPage = () => {
                         </div>
                     </div>
                     <div>
-                        <h1 className="text-center font-semibold text-4xl p-3 mt-20">
+                        <h1 className="text-center font-semibold text-4xl p-3 mt-40">
                             Kenapa aku bisa membantu ?
                         </h1>
-                        <div>
-                            <AboutCard />
+
+                        <AboutCard />
+                        <div className="flex justify-center">
+                            <Owner />
                         </div>
                     </div>
                 </div>

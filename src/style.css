@@ -32,3 +32,7 @@ body {
         rgba(254, 221, 134, 0) 100%
     );
 }
+
+.pict-owner {
+    margin-top: -50px;
+}
