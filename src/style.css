@@ -17,3 +17,18 @@ body {
 .rounded-right {
     border-radius: 0 10px 10px 0;
 }
+
+/* ---- about page ------ */
+.pict-card {
+    position: relative;
+    margin-left: -50px;
+    margin-top: -50px;
+}
+
+.about-card {
+    background: linear-gradient(
+        180deg,
+        #fedd86 0%,
+        rgba(254, 221, 134, 0) 100%
+    );
+}

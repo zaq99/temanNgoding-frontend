@@ -2,6 +2,12 @@
 module.exports = {
     content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
     theme: {
+        gradients: {
+            "custom-gradient": {
+                colors: ["#fedd86", "#6e3c95"],
+                directons: ["to bottom", "to top"],
+            },
+        },
         extend: {
             colors: {
                 "warna-utama-500": "#542E71",
