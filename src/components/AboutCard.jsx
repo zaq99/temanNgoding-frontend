@@ -2,9 +2,24 @@ import { Roket, Laptop, Playing } from "../assets";
 
 const AboutCard = () => {
     const cardValue = [
-        { id: 1, picture: Roket, judul: "Cepat", ket: "" },
-        { id: 2, picture: Laptop, judul: "Solutif", ket: "" },
-        { id: 3, picture: Playing, judul: "Sinergi", ket: "" },
+        {
+            id: 1,
+            picture: Roket,
+            judul: "Cepat",
+            ket: "Dapat dengan mudah menemukan solusi tanpa harus membaca dokumentasi yang panjang",
+        },
+        {
+            id: 2,
+            picture: Laptop,
+            judul: "Solutif",
+            ket: "Fitur saling bantu membuat solusi yang ada bisa lebih dari satu, kemungkinan mendapat solusi lebih besar",
+        },
+        {
+            id: 3,
+            picture: Playing,
+            judul: "Sinergi",
+            ket: "Fitur saling bantu membuat solusi yang ada bisa lebih dari satu, kemungkinan mendapat solusi lebih besar",
+        },
     ];
 
     return (
