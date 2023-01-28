@@ -46,7 +46,7 @@ const Form = () => {
             <input
                 type="text"
                 placeholder="tuliskan namamu ya"
-                className="bg-stone-200 p-1 pl-6 rounded-md text-sm"
+                className="bg-stone-200 p-2 pl-6 rounded-md text-sm"
                 name="name"
                 onChange={handleChange}
             />
@@ -56,7 +56,7 @@ const Form = () => {
             <input
                 type="text"
                 placeholder="contoh : PHP"
-                className="bg-stone-200 p-1 pl-6 rounded-md text-sm"
+                className="bg-stone-200 p-2 pl-6 rounded-md text-sm"
                 name="bahasa"
                 onChange={handleChange}
             />
@@ -66,7 +66,7 @@ const Form = () => {
             <input
                 type="text"
                 placeholder="masukan code error yang kamu temui"
-                className="bg-stone-200 p-1 pl-6 rounded-md text-sm"
+                className="bg-stone-200 p-2 pl-6 rounded-md text-sm"
                 name="eror"
                 onChange={handleChange}
             />
@@ -76,7 +76,7 @@ const Form = () => {
             <input
                 type="text"
                 placeholder="apa penyebabnya menurutmu ?"
-                className="bg-stone-200 p-1 pl-6 rounded-md text-sm"
+                className="bg-stone-200 p-2 pl-6 rounded-md text-sm"
                 name="penyebab"
                 onChange={handleChange}
             />
@@ -86,7 +86,7 @@ const Form = () => {
             <input
                 type="text"
                 placeholder="apa solusi yang ingin kamu bagikan"
-                className="bg-stone-200 p-1 pl-6 rounded-md text-sm"
+                className="bg-stone-200 p-2 pl-6 rounded-md text-sm"
                 name="solusi"
                 onChange={handleChange}
             />

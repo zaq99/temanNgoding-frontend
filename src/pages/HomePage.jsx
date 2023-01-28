@@ -1,10 +1,9 @@
-import { LaptopKuning, Tangan } from "../assets";
+import { Tangan } from "../assets";
 import { IconSearch } from "@tabler/icons";
 import ListKategori from "../components/ListKategori";
 import ListCard from "../components/ListCard";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import Card from "../components/Card";
 
 const HomePage = () => {
     const [data, setData] = useState([]);
