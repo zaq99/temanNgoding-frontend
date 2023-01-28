@@ -35,13 +35,13 @@ const AboutPage = () => {
                         </div>
                         <div>
                             <h3 className="text-2xl mb-4 font-semibold">
-                                Focus
+                                Pemula
                             </h3>
                             <p>
-                                Berfokus untuk para programmer pemula yang masih
-                                awam dalam membaca dokumentasi suatu bahasa,
-                                terlebih lagi untuk yang masih kesulitan
-                                memahami bahasa inggris
+                                Untuk kamu programmer pemula yang masih awam
+                                dalam membaca dokumentasi suatu bahasa, terlebih
+                                lagi masih kesulitan memahami bahasa inggris,
+                                aku adalah teman yang cocok untukmu
                             </p>
                         </div>
                     </div>

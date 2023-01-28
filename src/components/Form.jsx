@@ -21,7 +21,9 @@ const Form = () => {
             )
             .then((response) => {
                 console.log(response);
-                alert("Terimakasih atas bantuannya teman baikku");
+                alert(
+                    "Terimakasih, Bantuanmu tidak akan pernah aku lupakan :)"
+                );
             })
             .catch((error) => {
                 console.log(error);

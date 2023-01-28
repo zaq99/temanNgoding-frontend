@@ -2,8 +2,35 @@ import { LaptopKuning, Tangan } from "../assets";
 import { IconSearch } from "@tabler/icons";
 import ListKategori from "../components/ListKategori";
 import ListCard from "../components/ListCard";
+import { useState, useEffect } from "react";
+import axios from "axios";
+import Card from "../components/Card";
 
 const HomePage = () => {
+    const [data, setData] = useState([]);
+    const [query, setQuery] = useState("");
+    const [filteredData, setFilteredData] = useState([]);
+
+    useEffect(() => {
+        axios
+            .get("https://63d4cba90e7ae91a00a279a7.mockapi.io/solusi")
+            .then((response) => {
+                setData(response.data);
+            });
+    }, []);
+
+    useEffect(() => {
+        setFilteredData(
+            data.filter((data) =>
+                data.eror.toLowerCase().includes(query.toLowerCase())
+            )
+        );
+    }, [query, data]);
+
+    const handleChange = (e) => {
+        setQuery(e.target.value);
+    };
+
     return (
         <>
             <div className="text-white w-4/5 mx-auto flex flex-col-reverse md:flex-row justify-between mt-10 items-center">
@@ -25,7 +52,7 @@ const HomePage = () => {
             </div>
             <div className="rounded-up bg-warna-utama-400 mt-10 pt-10">
                 <div className="w-4/5 mx-auto mb-20">
-                    <form action="" className="flex items-center">
+                    <form className="flex items-center">
                         <label
                             htmlFor=""
                             className="mr-4 text-white font-semibold">
@@ -34,6 +61,7 @@ const HomePage = () => {
                         <input
                             type="text"
                             placeholder="salin error kamu disini // contoh : not defind"
+                            onChange={handleChange}
                             className="w-full p-2 rounded-left"
                         />
                         <button
@@ -42,8 +70,13 @@ const HomePage = () => {
                             <IconSearch />
                         </button>
                     </form>
+                    {/* {filteredData.map((data) => (
+                        <div key={data.id}>
+                            <p>{data.eror}</p>
+                        </div>
+                    ))} */}
                     <ListKategori />
-                    <ListCard />
+                    <ListCard data={filteredData} />
                 </div>
             </div>
         </>

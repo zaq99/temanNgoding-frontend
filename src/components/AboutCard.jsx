@@ -18,7 +18,7 @@ const AboutCard = () => {
             id: 3,
             picture: Playing,
             judul: "Sinergi",
-            ket: "Fitur saling bantu membuat solusi yang ada bisa lebih dari satu, kemungkinan mendapat solusi lebih besar",
+            ket: "Mari berkembang bersama untuk menjadi programmer pemula, dan beri tau yang lain jika ngoding itu mudah dan seru!",
         },
     ];
 
