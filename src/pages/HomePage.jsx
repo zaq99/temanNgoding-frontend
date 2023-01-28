@@ -36,7 +36,9 @@ const HomePage = () => {
                             placeholder="salin error kamu disini // contoh : not defind"
                             className="w-full p-2 rounded-left"
                         />
-                        <button className="p-2 text-warna-utama-400 bg-kuning-300 hover:bg-kuning-100 rounded-right">
+                        <button
+                            className="p-2 text-warna-utama-400 bg-kuning-300 hover:bg-kuning-100 rounded-right"
+                            type="submit">
                             <IconSearch />
                         </button>
                     </form>

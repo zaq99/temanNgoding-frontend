@@ -1,6 +1,6 @@
 import Profile from "./Profile";
 
-const Card = () => {
+const Card = ({ eror, name, bahasa, penyebab, solusi }) => {
     return (
         <div className="bg-white p-5 rounded-lg flex flex-col gap-4">
             <div className="flex gap-2">
@@ -11,22 +11,22 @@ const Card = () => {
             <div>
                 <h3 className="font-semibold p-1">Tipe Error</h3>
                 <pre className="ml-4 bg-stone-100 p-1 text-danger-400">
-                    <code>is not found</code>
+                    <code>{eror}</code>
                 </pre>
             </div>
             <div>
                 <h3 className="font-semibold p-1">Penyebab</h3>
-                <pre className="ml-4 bg-stone-100 p-1">
-                    <code>Ada sesuatu yang tidak tersedia di codemu</code>
+                <pre className="ml-4 bg-stone-100 p-1 overflow-auto">
+                    <code className="whitespace-normal">{penyebab}</code>
                 </pre>
             </div>
             <div>
                 <h3 className="font-semibold p-1">Solusi</h3>
                 <pre className="ml-4 bg-stone-100 p-1 text-succes-500">
-                    <code>Periksa kembali kodemu secara detail</code>
+                    <code className="whitespace-normal">{solusi}</code>
                 </pre>
             </div>
-            <Profile />
+            <Profile name={name} bahasa={bahasa} />
         </div>
     );
 };

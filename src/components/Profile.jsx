@@ -1,14 +1,14 @@
 import Button from "./Button";
-import { OwnerPhoto } from "../assets";
 
-const Profile = () => {
+const Profile = ({ name, bahasa }) => {
     return (
-        <div className="mt-6 flex justify-between">
+        <div className="mt-8 flex justify-between">
             <div className="flex items-center gap-3">
-                <img src={OwnerPhoto} alt="" className="w-12 h-12" />
-                <h4 className="font-semibold">Orang Baik</h4>
+                {/* <img src={foto} alt="" className="w-12 h-12" /> */}
+                <p className="text-xs">Dari :</p>
+                <h4 className="font-semibold"> {name}</h4>
             </div>
-            <Button text="Javascript" className="bg-kuning-300 py-0" />
+            <Button text={bahasa} className="bg-kuning-300 py-0" />
         </div>
     );
 };
