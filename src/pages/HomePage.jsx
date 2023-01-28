@@ -50,7 +50,7 @@ const HomePage = () => {
                 </div>
             </div>
             <div className="rounded-up bg-warna-utama-400 mt-10 pt-10">
-                <div className="w-4/5 mx-auto mb-20">
+                <div className="w-4/5 mx-auto pb-20">
                     <form className="flex items-center">
                         <label
                             htmlFor=""
