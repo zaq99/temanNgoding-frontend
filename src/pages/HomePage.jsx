@@ -35,14 +35,14 @@ const HomePage = () => {
         <>
             <div className="text-white w-4/5 mx-auto flex flex-col-reverse md:flex-row justify-between mt-10 items-center">
                 <div>
-                    <h1 className="leading-tight font-bold text-display-size">
+                    <h1 className="leading-tight font-bold text-3xl text-center xl:text-left mt-4 md:mt-0 md:text-center md:text-display-size">
                         Teman Ngoding.
                     </h1>
-                    <p className="mt-14">
-                        Apa yang kamu cemaskan dari Error yang hanya sekecil itu
-                        ?
+                    <p className="mt-14 text-center md:text-left">
+                        Apa yang kamu cemaskan dari Error yang hanya{" "}
+                        <strong>sekecil</strong> itu ?
                     </p>
-                    <p className="mt-2">
+                    <p className="mt-2 text-center md:text-left">
                         Yuk Liat bantuan yang diberikan teman ngodingmu disini
                     </p>
                 </div>
