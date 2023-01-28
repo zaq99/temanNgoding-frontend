@@ -17,10 +17,10 @@ const AboutPage = () => {
             </div>
             <div className="rounded-up bg-warna-utama-400 pt-6 text-white pb-48">
                 <div className="w-4/5 mx-auto">
-                    <h1 className="text-center font-semibold text-4xl p-3">
+                    <h1 className="text-center font-semibold text-2xl md:text-4xl p-3">
                         Hallo, Aku adalah Teman Ngoding.
                     </h1>
-                    <div className="flex justify-between gap-20 mt-20">
+                    <div className="flex flex-col md:flex-row justify-between gap-20 mt-20">
                         <div>
                             <h3 className="text-2xl mb-4 font-semibold">
                                 Teman Ngoding ?
@@ -33,7 +33,7 @@ const AboutPage = () => {
                                 sendirian.
                             </p>
                         </div>
-                        <div>
+                        <div className="mt-10 md:mt-0">
                             <h3 className="text-2xl mb-4 font-semibold">
                                 Pemula
                             </h3>
@@ -46,7 +46,7 @@ const AboutPage = () => {
                         </div>
                     </div>
                     <div>
-                        <h1 className="text-center font-semibold text-4xl p-3 mt-40">
+                        <h1 className="text-center font-semibold text-2xl md:text-4xl p-3 mt-40">
                             Kenapa aku bisa membantu ?
                         </h1>
 

@@ -93,7 +93,7 @@ const Form = () => {
             <Button
                 type="submit"
                 text="kirim"
-                className="mt-10 bg-succes-300 hover:bg-succes-400 text-white w-1/6 py-2"
+                className="mt-10 bg-succes-300 hover:bg-succes-400 text-white md:w-1/6 py-2"
             />
         </form>
     );

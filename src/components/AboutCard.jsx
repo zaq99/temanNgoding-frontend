@@ -24,11 +24,11 @@ const AboutCard = () => {
 
     return (
         <>
-            <div className="flex justify-between gap-6 mt-10 ">
+            <div className="flex flex-col md:flex-row justify-between gap-6 mt-10 ">
                 {cardValue.map((item) => (
                     <div
                         key={item.id}
-                        className="about-card p-4 rounded-xl w-1/3">
+                        className="about-card p-4 rounded-xl w-full md:w-1/3 mb-10 md:mb-0">
                         <img
                             src={item.picture}
                             alt=""

@@ -2,7 +2,7 @@ import { OwnerPhoto } from "../assets";
 
 const Owner = () => {
     return (
-        <div className="mt-48 flex flex-col items-center w-2/3">
+        <div className="mt-48 flex flex-col items-center w-full md:w-2/3">
             <img
                 src={OwnerPhoto}
                 alt=""
