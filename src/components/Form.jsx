@@ -24,7 +24,9 @@ const Form = () => {
                 alert(
                     "Terimakasih, Bantuanmu tidak akan pernah aku lupakan :)"
                 );
-                window.location.reload();
+                // setFormData({});
+                // history.push("/");
+                // window.location.reload();
             })
             .catch((error) => {
                 console.log(error);
