@@ -24,6 +24,7 @@ const Form = () => {
                 alert(
                     "Terimakasih, Bantuanmu tidak akan pernah aku lupakan :)"
                 );
+                window.location.reload();
             })
             .catch((error) => {
                 console.log(error);
@@ -48,6 +49,7 @@ const Form = () => {
                 placeholder="tuliskan namamu ya"
                 className="bg-stone-200 p-2 pl-6 rounded-md text-sm"
                 name="name"
+                // value={formData.name}
                 onChange={handleChange}
             />
             <label htmlFor="" className="mt-4 font-semibold">
@@ -58,6 +60,7 @@ const Form = () => {
                 placeholder="contoh : PHP"
                 className="bg-stone-200 p-2 pl-6 rounded-md text-sm"
                 name="bahasa"
+                // value={formData.bahasa}
                 onChange={handleChange}
             />
             <label htmlFor="" className="mt-4 font-semibold">
@@ -68,6 +71,7 @@ const Form = () => {
                 placeholder="masukan code error yang kamu temui"
                 className="bg-stone-200 p-2 pl-6 rounded-md text-sm"
                 name="eror"
+                // value={formData.eror}
                 onChange={handleChange}
             />
             <label htmlFor="" className="mt-4 font-semibold">
@@ -78,6 +82,7 @@ const Form = () => {
                 placeholder="apa penyebabnya menurutmu ?"
                 className="bg-stone-200 p-2 pl-6 rounded-md text-sm"
                 name="penyebab"
+                // value={formData.penyebab}
                 onChange={handleChange}
             />
             <label htmlFor="" className="mt-4 font-semibold">
@@ -88,6 +93,7 @@ const Form = () => {
                 placeholder="apa solusi yang ingin kamu bagikan"
                 className="bg-stone-200 p-2 pl-6 rounded-md text-sm"
                 name="solusi"
+                // value={formData.solusi}
                 onChange={handleChange}
             />
             <Button
