@@ -51,6 +51,7 @@ const Form = () => {
                 placeholder="tuliskan namamu ya"
                 className="bg-stone-200 p-2 pl-6 rounded-md text-sm"
                 name="name"
+                required
                 // value={formData.name}
                 onChange={handleChange}
             />
@@ -62,6 +63,7 @@ const Form = () => {
                 placeholder="contoh : PHP"
                 className="bg-stone-200 p-2 pl-6 rounded-md text-sm"
                 name="bahasa"
+                required
                 // value={formData.bahasa}
                 onChange={handleChange}
             />
@@ -73,6 +75,7 @@ const Form = () => {
                 placeholder="masukan code error yang kamu temui"
                 className="bg-stone-200 p-2 pl-6 rounded-md text-sm"
                 name="eror"
+                required
                 // value={formData.eror}
                 onChange={handleChange}
             />
@@ -84,6 +87,7 @@ const Form = () => {
                 placeholder="apa penyebabnya menurutmu ?"
                 className="bg-stone-200 p-2 pl-6 rounded-md text-sm"
                 name="penyebab"
+                required
                 // value={formData.penyebab}
                 onChange={handleChange}
             />
@@ -95,6 +99,7 @@ const Form = () => {
                 placeholder="apa solusi yang ingin kamu bagikan"
                 className="bg-stone-200 p-2 pl-6 rounded-md text-sm"
                 name="solusi"
+                required
                 // value={formData.solusi}
                 onChange={handleChange}
             />
