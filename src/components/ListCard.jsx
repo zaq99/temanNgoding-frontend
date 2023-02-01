@@ -23,9 +23,10 @@ const ListCard = ({ data }) => {
 
     return (
         <div className="mt-10 flex flex-col gap-3">
-            {data.map((item) => (
+            {data.map((item, index) => (
                 <Card
-                    eror={item.eror}
+                    key={index}
+                    eror={item.error}
                     name={item.name}
                     bahasa={item.bahasa}
                     penyebab={item.penyebab}

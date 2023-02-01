@@ -10,18 +10,27 @@ const HomePage = () => {
     const [query, setQuery] = useState("");
     const [filteredData, setFilteredData] = useState([]);
 
+    const [user, setUser] = useState([]);
+
+    // useEffect(() => {
+    //     getData();
+    // }, []);
+
+    // const getData = async () => {
+    //     const response = await axios.get("http://localhost:5000/data");
+    //     console.log(response.data);
+    // };
+
     useEffect(() => {
-        axios
-            .get("https://63d4cba90e7ae91a00a279a7.mockapi.io/solusi")
-            .then((response) => {
-                setData(response.data);
-            });
+        axios.get("http://localhost:5000/data").then((response) => {
+            setData(response.data);
+        });
     }, []);
 
     useEffect(() => {
         setFilteredData(
             data.filter((data) =>
-                data.eror.toLowerCase().includes(query.toLowerCase())
+                data.error.toLowerCase().includes(query.toLowerCase())
             )
         );
     }, [query, data]);

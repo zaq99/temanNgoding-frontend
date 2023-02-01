@@ -12,13 +12,9 @@ const Form = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         axios
-            .post(
-                "https://63d4cba90e7ae91a00a279a7.mockapi.io/solusi",
-                formData,
-                {
-                    headers: { "Content-Type": "application/json" },
-                }
-            )
+            .post("http://localhost:5000/data", formData, {
+                headers: { "Content-Type": "application/json" },
+            })
             .then((response) => {
                 console.log(response);
                 alert(
@@ -68,13 +64,13 @@ const Form = () => {
                 onChange={handleChange}
             />
             <label htmlFor="" className="mt-4 font-semibold">
-                Jenis Error{" "}
+                Jenis Error
             </label>
             <input
                 type="text"
                 placeholder="masukan code error yang kamu temui"
                 className="bg-stone-200 p-2 pl-6 rounded-md text-sm"
-                name="eror"
+                name="error"
                 required
                 // value={formData.eror}
                 onChange={handleChange}
