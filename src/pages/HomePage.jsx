@@ -22,9 +22,11 @@ const HomePage = () => {
     // };
 
     useEffect(() => {
-        axios.get("http://localhost:5000/data").then((response) => {
-            setData(response.data);
-        });
+        axios
+            .get("https://temanngoding-backend-production.up.railway.app/data")
+            .then((response) => {
+                setData(response.data);
+            });
     }, []);
 
     useEffect(() => {
@@ -78,11 +80,6 @@ const HomePage = () => {
                             <IconSearch />
                         </button>
                     </form>
-                    {/* {filteredData.map((data) => (
-                        <div key={data.id}>
-                            <p>{data.eror}</p>
-                        </div>
-                    ))} */}
                     <ListKategori />
                     <ListCard data={filteredData} />
                 </div>

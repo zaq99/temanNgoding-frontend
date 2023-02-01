@@ -38,12 +38,6 @@ const AboutCard = () => {
                         <p className="text-sm">{item.ket}</p>
                     </div>
                 ))}
-                {/* {cardValue.map((item) => (
-                    <div key={item.id}>
-                        <img src={item.picture} alt="" />
-                        <p>{item.judul}</p>
-                    </div>
-                ))} */}
             </div>
         </>
     );

@@ -4,7 +4,6 @@ const Profile = ({ name, bahasa }) => {
     return (
         <div className="mt-8 flex justify-between">
             <div className="flex items-center gap-3">
-                {/* <img src={foto} alt="" className="w-12 h-12" /> */}
                 <p className="text-xs">Dari :</p>
                 <h4 className="font-semibold"> {name}</h4>
             </div>

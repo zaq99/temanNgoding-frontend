@@ -1,9 +1,11 @@
 import axios from "axios";
 import { useState } from "react";
 import Button from "./Button";
+import { useNavigate } from "react-router-dom";
 
 const Form = () => {
     const [formData, setFormData] = useState({});
+    const navigate = useNavigate();
 
     const handleChange = (event) => {
         setFormData({ ...formData, [event.target.name]: event.target.value });
@@ -12,17 +14,19 @@ const Form = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         axios
-            .post("http://localhost:5000/data", formData, {
-                headers: { "Content-Type": "application/json" },
-            })
+            .post(
+                "https://temanngoding-backend-production.up.railway.app/data",
+                formData,
+                {
+                    headers: { "Content-Type": "application/json" },
+                }
+            )
             .then((response) => {
                 console.log(response);
                 alert(
                     "Terimakasih, Bantuanmu tidak akan pernah aku lupakan :)"
                 );
-                // setFormData({});
-                // history.push("/");
-                // window.location.reload();
+                navigate("/");
             })
             .catch((error) => {
                 console.log(error);
@@ -32,13 +36,8 @@ const Form = () => {
 
     return (
         <form
-            // encType="multipart/form-data"
             onSubmit={handleSubmit}
             className="mt-16 bg-white p-10 flex flex-col rounded-xl">
-            {/* <label htmlFor="" className="mt-4 font-semibold">
-                Fotomu
-            </label>
-            <input type="file" name="foto" onChange={handleChange} /> */}
             <label htmlFor="" className="mt-4 font-semibold">
                 Nama
             </label>
@@ -48,7 +47,6 @@ const Form = () => {
                 className="bg-stone-200 p-2 pl-6 rounded-md text-sm"
                 name="name"
                 required
-                // value={formData.name}
                 onChange={handleChange}
             />
             <label htmlFor="" className="mt-4 font-semibold">
@@ -60,7 +58,6 @@ const Form = () => {
                 className="bg-stone-200 p-2 pl-6 rounded-md text-sm"
                 name="bahasa"
                 required
-                // value={formData.bahasa}
                 onChange={handleChange}
             />
             <label htmlFor="" className="mt-4 font-semibold">
@@ -72,7 +69,6 @@ const Form = () => {
                 className="bg-stone-200 p-2 pl-6 rounded-md text-sm"
                 name="error"
                 required
-                // value={formData.eror}
                 onChange={handleChange}
             />
             <label htmlFor="" className="mt-4 font-semibold">
@@ -84,7 +80,6 @@ const Form = () => {
                 className="bg-stone-200 p-2 pl-6 rounded-md text-sm"
                 name="penyebab"
                 required
-                // value={formData.penyebab}
                 onChange={handleChange}
             />
             <label htmlFor="" className="mt-4 font-semibold">
@@ -96,7 +91,6 @@ const Form = () => {
                 className="bg-stone-200 p-2 pl-6 rounded-md text-sm"
                 name="solusi"
                 required
-                // value={formData.solusi}
                 onChange={handleChange}
             />
             <Button

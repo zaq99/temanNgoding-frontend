@@ -4,12 +4,6 @@ import AboutCard from "../components/AboutCard";
 import Owner from "../components/Owner";
 
 const AboutPage = () => {
-    // const cardValue = [
-    //     { picture: { Roket }, judul: "Cepat", ket: "" },
-    //     { picture: { Laptop }, judul: "Solutif", ket: "" },
-    //     { picture: { Playing }, judul: "Sinergi", ket: "" },
-    // ];
-
     return (
         <>
             <div className="w-4/5 mx-auto flex justify-center">
