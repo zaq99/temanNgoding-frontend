@@ -10,9 +10,10 @@ const Owner = () => {
             />
             <div className="flex flex-col gap-10 text-center p-10 bg-warna-utama-500 rounded-xl pt-20">
                 <p>
-                    “Saya Berharap platform ini bisa menjadi tempat untuk para
-                    programmer untuk terhubung, berkontribusi, dan saling
-                    memberi manfaat terutama dalam menghadapi error.”
+                    “Aku Berharap platform ini bisa menjadi tempat untuk para
+                    programmer Indonesia untuk terhubung, berkontribusi, dan
+                    saling memberi manfaat terutama dalam menghadapi error. mari
+                    kita beri tau yang lain bahwa error tidak semenyeramkan itu”
                 </p>
                 <p>-Salam hangat, dari aku teman ngodingmu.</p>
             </div>
