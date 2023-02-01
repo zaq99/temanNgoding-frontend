@@ -9,17 +9,7 @@ const HomePage = () => {
     const [data, setData] = useState([]);
     const [query, setQuery] = useState("");
     const [filteredData, setFilteredData] = useState([]);
-
     const [user, setUser] = useState([]);
-
-    // useEffect(() => {
-    //     getData();
-    // }, []);
-
-    // const getData = async () => {
-    //     const response = await axios.get("http://localhost:5000/data");
-    //     console.log(response.data);
-    // };
 
     useEffect(() => {
         axios
