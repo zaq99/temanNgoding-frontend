@@ -11,7 +11,7 @@ const Card = ({ eror, name, bahasa, penyebab, solusi }) => {
             <div>
                 <h3 className="font-semibold p-1">Tipe Error</h3>
                 <pre className="ml-4 bg-stone-100 p-1 text-danger-400">
-                    <code>{eror}</code>
+                    <code className="whitespace-normal">{eror}</code>
                 </pre>
             </div>
             <div>
